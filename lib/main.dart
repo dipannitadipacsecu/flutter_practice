@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_practice/ContainerExample.dart';
+import 'package:flutter_practice/RowExample.dart';
+import 'package:flutter_practice/ScaffoldExample.dart';
 
 void main() {
   runApp(MyApp());
@@ -49,45 +52,5 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-class ScaffoldExample extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('Scaffold Example')),
-      body: Center(child: Text('This is a Scaffold Example Page!')),
-    );
-  }
-}
-class ContainerExample extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('Container Example')),
-      body: Center(
-        child: Container(
-          padding: EdgeInsets.all(20),
-          color: Colors.blue,
-          child: Text('This is a Container Example!'),
-        ),
-      ),
-    );
-  }
-}
-class RowExample extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('Row Example')),
-      body: Center(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Icon(Icons.star, color: Colors.yellow),
-            Text('Row Example'),
-            Icon(Icons.star, color: Colors.yellow),
-  ],
-),
-),
-);
-}
-}
+
+
